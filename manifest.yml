@@ -1,0 +1,10 @@
+---
+applications:
+  - name: mochi-app
+    buildpacks:
+      - java_buildpack
+    routes:
+      - route: is-mochi-in-today.cfapps.io
+    path: build/libs/mochi-backend-0.0.1-SNAPSHOT.jar
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
