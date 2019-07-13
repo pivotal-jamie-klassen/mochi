@@ -1,6 +1,6 @@
 import {Subject, throwError as observableThrowError} from 'rxjs';
 import {Injectable} from '@angular/core';
-import {HttpErrorResponse} from "@angular/common/http/src/response";
+import {HttpErrorResponse} from '@angular/common/http';
 
 
 type ApiRequestContext = { accountId: number };

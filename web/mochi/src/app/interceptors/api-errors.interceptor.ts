@@ -1,7 +1,6 @@
 import {catchError} from 'rxjs/operators';
 import {Injectable} from "@angular/core";
-import {HttpEvent, HttpHandler, HttpInterceptor, HttpRequest} from "@angular/common/http";
-import {HttpErrorResponse} from "@angular/common/http/src/response";
+import {HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HttpErrorResponse} from "@angular/common/http";
 import {EMPTY, Observable} from "rxjs";
 import {ApiEventsService} from "../service/api-events.service";
 
