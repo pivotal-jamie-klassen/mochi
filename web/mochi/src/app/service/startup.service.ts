@@ -6,6 +6,7 @@ import {MOCHI_API} from "../mochi-api/mochi-api";
 
 export interface MochiConfig {
     mochiIn: boolean;
+    nextIn: string;
 }
 
 @Injectable()
@@ -24,6 +25,7 @@ export class StartupService {
         .then(data => {
           console.log(data);
             configService.mochiIn = data.mochiIn;
+            configService.nextIn = data.nextIn;
             return data;
         });
 

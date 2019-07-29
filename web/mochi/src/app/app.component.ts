@@ -9,10 +9,11 @@ import {ConfigService} from "./service/config.service";
 export class AppComponent {
   title = 'mochi';
   mochiIsIn = false;
+  nextIn:string = null;
 
   constructor(private configService: ConfigService) {
     this.mochiIsIn = configService.mochiIn;
-
+    this.nextIn = configService.nextIn;
   }
 
   getTitleStyle() {
